@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Sign Up</string>
+
+    <!--main activity values-->
+    <string name="your_app">Your App</string>
+    <string name="log_in">LOG IN</string>
+    <string name="sign_up">SIGN UP</string>
+
+
+    <!--sign up name values-->
+    <string name="ask_name">What\'s your name?</string>
+    <string name="first_name">FIRST NAME</string>
+    <string name="last_name">LAST NAME</string>
+    <string name="agreement">By tapping Sign Up &amp; Accept, you acknowledge that you have read the Privacy Policy and agree to the Terms of Service.</string>
+    <string name="sign_up_and_accept">Sign Up &amp; Accept </string>
+
+
 </resources>
