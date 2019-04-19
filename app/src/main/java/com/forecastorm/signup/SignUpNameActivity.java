@@ -28,13 +28,13 @@ public class SignUpNameActivity extends AppCompatActivity {
     private String lastNameString;
 
 
-
     // a text watcher to keep track of input in editText
     private TextWatcher signUpAndAcceptTextWatcher = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
         }
+
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
 
@@ -50,6 +50,7 @@ public class SignUpNameActivity extends AppCompatActivity {
                 signUpAndAcceptButton.setEnabled(true);
             }
         }
+
         @Override
         public void afterTextChanged(Editable s) {
 
@@ -84,7 +85,6 @@ public class SignUpNameActivity extends AppCompatActivity {
                 signUpAndAcceptButton.setEnabled(true);
             }
         }
-
 
 
         //press back button go back to main
@@ -142,6 +142,15 @@ public class SignUpNameActivity extends AppCompatActivity {
         //  agreement text view ends
 
 
+        //press sign up and accept button go to sign up user name activity
+        signUpAndAcceptButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSignUpUsernameActivity();
+            }
+        });
+
+
     }
 
     private void openMainActivity() {
@@ -160,5 +169,13 @@ public class SignUpNameActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    // passing firstName and last Name to signUpUsername activity
+    private void openSignUpUsernameActivity() {
+        Intent intent = new Intent(this, SignUpUsernameActivity.class);
+        String firstNameString = firstNameEditText.getText().toString();
+        String lastNameString = lastNameEditText.getText().toString();
+        intent.putExtra("firstNameStringKey", firstNameString);
+        intent.putExtra("lastNameStringKey", lastNameString);
+        startActivity(intent);
+    }
 }

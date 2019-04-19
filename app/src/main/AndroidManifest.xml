@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".TermsOfServiceActivity"></activity>
+        <activity android:name=".SignUpPasswordActivity"></activity>
+        <activity android:name=".SignUpUsernameActivity" />
+        <activity android:name=".TermsOfServiceActivity" />
         <activity android:name=".PrivacyPolicyActivity" />
         <activity android:name=".SignUpNameActivity" />
         <activity android:name=".MainActivity">

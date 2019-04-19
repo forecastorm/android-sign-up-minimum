@@ -14,5 +14,11 @@
     <string name="agreement">By tapping Sign Up &amp; Accept, you acknowledge that you have read the Privacy Policy and agree to the Terms of Service.</string>
     <string name="sign_up_and_accept">Sign Up &amp; Accept </string>
 
+    <!--sign up user name values-->
+    <string name="ask_username">Pick a username</string>
+    <string name="username_description">Your username is how friends add you on this App.</string>
+    <string name="username">USERNAME</string>
+    <string name="Continue">Continue</string>
+
 
 </resources>
